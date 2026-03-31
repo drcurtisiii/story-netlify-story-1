@@ -62,6 +62,10 @@
 <p>Refresh <strong><a href="http://storypretext.netlify.app" target="_blank" rel="noopener">storypretext.netlify.app</a></strong> to test.</p>
 <p>now neither picture or pdf can do full width...picture could do full width of column before but pdf thumbnail couldn't now neither can</p>
 <p>The issue is in the float controls — when you click &quot;━&quot; (no float/full width), it's not clearing the width constraint properly. Let me fix both the ResizableImage and EvidenceEmbed extensions.</p>
+<figure class="evidence-embed" style="float: right; margin: 0.5em 0 0.5em 1.5em; width: 180px; max-width: 100%; cursor: pointer; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; padding: 1em; text-align: center;">
+  <div style="font-size: 2em;">📎</div>
+  <figcaption style="font-size: 0.75em; color: #666; margin-top: 4px;">244768895 Request For Production.pdf</figcaption>
+</figure>
 <p>Read a file</p>
 <p>Read a file</p>
 <blockquote><p>Found it. When switching to none (full width), the width stays at whatever it was set to (e.g., 300px). It needs to clear the width. Same issue in the evidence embed. Let me fix both:</p>
